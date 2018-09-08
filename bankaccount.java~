@@ -1,0 +1,42 @@
+import static java.lang.System.*;
+
+import java.util.Scanner;
+
+public class bankaccount {
+  public static void main( String[], args){
+    Scanner input = new Scanner(System.in);
+    
+    int amount;
+    String request,  depo, deposit;
+    
+    out.prinln(" *************Welcome to Ecobank. ****************** ");
+    out.println("Enter your balance");
+    amount = input.nextInt();
+    
+    out.println("Kindly choose the following option");
+    out.println("1.  Deposit");
+    out.println("2.  Withdraw");
+    out.println("3.  Inquiry");
+    request = input.next();
+    
+    
+    if (request = "Deposit"){
+      out.println("How much are you depositing?");
+      deposit = input.nextInt();
+      depo = amount + deposit;
+      out.println("Your new balance is :  " + depo); 
+    }
+    if (request = "Withdraw") {
+      out.println("How much are you withdrawing?");
+      withdraw = input.nextInt();
+      with = amount - withdraw;
+      out.println("Your new balance is : " + with);
+    }
+    if (request = "Inquiry") {
+      out.println("Your balance is : " + amount);}
+  }
+}
+      
+    
+      
+    
